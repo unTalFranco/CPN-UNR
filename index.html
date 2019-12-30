@@ -75,24 +75,27 @@
 
 
     </div>   
-
+    <div class="fixed-action-btn modal-trigger" href="#modal1">
+        <a class="btn-floating btn-large red">
+          <i class="purple darken-4 large material-icons">mode_edit</i>
+        </a>
+    </div>
 
     <footer class="purple darken-4 page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Contador Publico Nacional</h5>
-                    <p class="grey-text text-lighten-4">UNR programa 2003. Puedes organizar tu carrera de manera mas
-                        sencilla y llevar tu info a todos lados. </p>
+                    <h5 class="white-text">Contador Público Nacional</h5>
+                    <p class="grey-text text-lighten-4">Programa oficial 2003 de la Universidad Nacional de Rosario. Marcando las materias aprobadas, podrás ver con un 'OK' aquellas cátedras que ya puedes rendir. Y las que todavia no puedes rendir, clickeando encima de su nombre, la app te informara que correlativa debes aprobar. </p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class=" white-text modal-trigger" href="#modal1">Editar lista materias aprobadas</a></li>
+                        <li><a class=" white-text modal-trigger" href="#modal1">Editar lista materias aprobadas.</a></li>
                         <li><a class=" white-text modal-trigger" href="#modal2"
-                                onclick="consultarMaterias(true)">Ver Aprobadas</a></li>
+                                onclick="consultarMaterias(true)">Ver materias aprobadas.</a></li>
                         <li><a class=" white-text modal-trigger" href="#modal2"
-                                onclick="consultarMaterias(false)">Ver Desaprobadas</a></li>
+                                onclick="consultarMaterias(false)">Ver materias no aprobadas.</a></li>
                     </ul>
                 </div>
             </div>
@@ -100,10 +103,11 @@
         <div class="purple darken-3 footer-copyright">
             <div class="container">
                 © 2019 desarollado por @unTalFranco.
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+               
             </div>
         </div>
     </footer>
+    
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
