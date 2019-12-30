@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="grey lighten-5">
+    
+
+    <nav>
+        <div class="purple darken-4 nav-wrapper">
+            <a href="#" class="brand-logo center">Contador - UNR</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="  modal-trigger" href="#modal1">Editar</a></li>
+                <li><a class="  modal-trigger" href="#modal2" onclick="consultarMaterias(true)">Aprobadas</a></li>
+                <li><a class="  modal-trigger" href="#modal2" onclick="consultarMaterias(false)">Desaprobadas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="progress">
+            <div id="progresoCarrera" class="determinate" style="width:0%" onclick="activarToast()"> </div>
+
+        </div>
+
+
+        <div id='contenedorUl'>
+            <!-- UL materias cargadas dinamicamente. -->
+        </div>
+
+
+
+        <!-- Modal Structure para modificar lista de materias aprobadas-->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Materias aprobadas</h4>
+                <p>Selecciona tus materias aprobadas.</p>
+                <form action="#" id='formModal'>
+                    <p></p>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"
+                    onclick="guardarDatos()">Guardar</a>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Modal Structure para ver materias aprobadas/desaprobadas -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4 id='tituloModal'>Materias aprobadas</h4>
+                <div id="materiasFiltradas">
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+
+
+    </div>   
+
+
+    <footer class="purple darken-4 page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contador Publico Nacional</h5>
+                    <p class="grey-text text-lighten-4">UNR programa 2003. Puedes organizar tu carrera de manera mas
+                        sencilla y llevar tu info a todos lados. </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class=" white-text modal-trigger" href="#modal1">Editar</a></li>
+                        <li><a class=" white-text modal-trigger" href="#modal2"
+                                onclick="consultarMaterias(true)">Aprobadas</a></li>
+                        <li><a class=" white-text modal-trigger" href="#modal2"
+                                onclick="consultarMaterias(false)">Desaprobadas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="purple darken-3 footer-copyright">
+            <div class="container">
+                © 2019 desarollado por Franco Cejudo.
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
